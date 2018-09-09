@@ -1,0 +1,9 @@
+.large{
+    height:60vh !important;
+}
+.modal-close{
+    display:none !important;
+}
+.modal-content{
+    text-align:center;
+}
