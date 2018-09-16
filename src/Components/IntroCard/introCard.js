@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Card, CardTitle} from 'react-materialize';
-import Me from "./me.jpg";
+import Me from "../../Assets/me.jpg";
 import "./introCard.css"
 class IntroCard extends Component {
 
