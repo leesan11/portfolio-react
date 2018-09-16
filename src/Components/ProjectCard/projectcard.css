@@ -1,0 +1,8 @@
+.carousel{
+    top:5vh !important;
+    display:none;
+    position:absolute !important;
+}
+img{
+    height:80vh;
+}

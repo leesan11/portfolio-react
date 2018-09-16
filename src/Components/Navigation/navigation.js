@@ -5,6 +5,9 @@ import {Button} from 'react-materialize';
 
 class Navigation extends Component{
 
+    handleClickProject(){
+        document.getElementsByClassName("carousel")[0].style.display="block";
+    }
 
     render(){
         return(
@@ -12,9 +15,8 @@ class Navigation extends Component{
     <ModalIntro
     Trigger={<Button data='first' floating icon='perm_identity' className='red'/>}
     />
-    <Button floating icon='format_quote' className='yellow darken-1'/>
-    <Button floating icon='publish' className='green'/>
-    <Button floating icon='attach_file' className='blue'/>
+    <Button onClick={this.handleClickProject} floating icon='format_quote' className='yellow darken-1'/>
+    
     </Button>)
     }
 

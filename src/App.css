@@ -4,4 +4,78 @@ body{
     background-repeat:no-repeat;
     background-position:center center;
     height:100vh;
+    overflow: hidden;
+    filter:gray;
+}
+.type-writer{
+  
+  margin-top: 40vh;
+  color:white;
+}
+
+/* Typewriter Animation and effect on home image */
+
+.type-writer :first-child{
+  border-right: .15em solid black;
+  font-family: "Courier";
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0;
+  animation: typing 4s steps(40, end), blink-caret .5s step-end infinite alternate;
+  animation-fill-mode: forwards;
+}
+
+.type-writer :nth-child(2){
+  border-right: .15em solid black;
+  font-family: "Courier";
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0;
+  animation: typing 4s steps(40, end), blink-caret .5s step-end infinite alternate;
+  animation-delay:4s;
+  animation-fill-mode: forwards;
+}
+
+
+.type-writer :last-child{
+  border-right: .15em solid black;
+  font-family: "Courier";
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0;
+  animation: typing-last-line 4s steps(40, end), blink-caret .5s step-end infinite alternate;
+  animation-delay:8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing{
+  0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      border:none;
+    }
+}
+@keyframes typing-last-line{
+  0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes blink-caret{
+  50% {
+      border-color: transparent;
+    }
 }
